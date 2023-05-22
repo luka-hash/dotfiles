@@ -1,3 +1,6 @@
+# Copyright (c) 2023 Luka Ivanovic
+# This code is licensed under MIT licence (see LICENCE for details)
+
 #!/usr/bin/env bash
 
 # sleep 0.1 
