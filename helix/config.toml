@@ -1,0 +1,25 @@
+theme = "everforest_dark"
+
+[editor]
+line-number = "relative"
+mouse = false
+middle-click-paste = false
+cursorline = true
+auto-save = true
+rulers = [80,120]
+bufferline = "multiple"
+idle-timeout = 0
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[keys.insert]
+C-backspace = "delete_word_backward"
+
+[keys.normal]
+C-s = ":w"
+g = { a = "code_action" }
+"C-/" = "toggle_comments"
+
