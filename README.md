@@ -14,4 +14,4 @@ Also, these are tested on Linux system only (so no macOS support, yet)
 
 ## Licence
 
-This code is licensed under MIT licence (see LICENCE for details).
+If not specified inside the file, code is licensed under MIT licence (see LICENCE for details).
