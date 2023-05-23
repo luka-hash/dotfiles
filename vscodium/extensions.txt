@@ -1,0 +1,4 @@
+- Bearded Theme
+- Go
+- rust-analyzer
+- Deno

@@ -1,0 +1,58 @@
+{
+    "workbench.startupEditor": "none",
+    "workbench.colorTheme": "Bearded Theme Arc EolStorm",
+    "telemetry.telemetryLevel": "off",
+    "workbench.enableExperiments": false,
+    "editor.minimap.enabled": false,
+    "window.menuBarVisibility": "toggle",
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "update.mode": "none",
+    "extensions.autoCheckUpdates": false,
+    "extensions.autoUpdate": false,
+    "npm.fetchOnlinePackageInfo": false,
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "workbench.colorCustomizations": {
+        "editor.foreground": "#ffffff"
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.organizeImports": true
+    },
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": false,
+    "editor.tabSize": 2,
+    "editor.fontFamily": "'Iosevka', 'Droid Sans Mono', 'monospace', monospace",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 18,
+    "json.schemaDownload.enable": false,
+    "editor.renderWhitespace": "trailing",
+    "terminal.integrated.fontSize": 18,
+    "terminal.integrated.defaultProfile.linux": "fish",
+    "[typescript]": {
+        "editor.defaultFormatter": "denoland.vscode-deno"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "denoland.vscode-deno"
+    },
+    "[xml]": {
+        "editor.defaultFormatter": "redhat.vscode-xml"
+    },
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "workbench.editor.enablePreview": false,
+    "files.autoSave": "afterDelay",
+    "[python]": {
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4
+    },
+    "files.autoSaveDelay": 10000,
+    "git.openRepositoryInParentFolders": "never",
+    "extensions.ignoreRecommendations": true,
+    "redhat.telemetry.enabled": false,
+    "workbench.welcomePage.walkthroughs.openOnInstall": false,
+    "window.zoomLevel": 1
+}

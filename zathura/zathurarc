@@ -1,0 +1,91 @@
+# J => next page
+# K => previous page
+# h, j, k, l => scroll left, down, up, right
+# gg => go to the first page
+# G => go to the last page
+# nG => go to the nth page
+# P => snaps to the current page
+# T => goto top of the current page
+# B => goto bottom of the current page
+# w => adjust window in width mode
+# b => adjust window in best-fit mode
+# ^r => reload document
+# I => invert colors
+# r => rotate by 90 degrees clock-wise
+# R => rotate by 90 degrees counter-clock-wise
+# d => toggle dual page view
+# ^k => zoom in
+# ^j => zoom out
+# ^p => print document
+# ^s => toggle statusbar
+
+# makes it so gui version is stripped down (at least that's what docs say)
+set guioptions ""
+# makes highlights more visible
+set highlight-transparency 0.6
+# sets padding between pages
+set page-padding 10
+# when opening window, adjust to width
+set adjust-open width
+# set clipboard to CLIPBOARD clipboard
+set selection-clipboard clipboard
+# adds page number on window title
+set window-title-page true
+# sets vertical and horizontal padding for statusbar
+set statusbar-v-padding  15
+set statusbar-h-padding  10
+# sets mapping for toggling between fullscreen and windowed mode
+unmap f
+map [normal] f toggle_fullscreen
+map [fullscreen] f toggle_fullscreen
+# sets mapping for following links
+unmap <C-f>
+map [normal] <C-f> follow
+map [fullscreen] <C-f> follow
+# sets mapping for clearing search highlights
+# for some unknown reason zathura returns warning saying that
+# :nohlsearch <enter> is not a valid command
+unmap <Esc>
+map [normal] <Esc> :nohlsearch <enter> 
+map [fullscreen] <Esc> :nohlsearch <enter> 
+# sets mapping for zooming
+unmap <C-k>
+unmap <C-j>
+map [normal] <C-k> zoom in
+map [fullscreen] <C-k> zoom in
+map [normal] <C-j> zoom out
+map [fullscreen] <C-j> zoom out
+# sets mapping for inverting collors
+unmap I
+unmap <C-r>
+map [normal] I recolor
+map [fullscreen] I recolor
+# sets mapping for toggling statusbar on and off
+unmap <C-s>
+map [normal] <C-s> toggle_statusbar
+map [fullscreen] <C-s> toggle_statusbar
+# sets mapping for rotating
+unmap R
+unmap r
+map [normal] r rotate
+map [normal] R rotate rotate-ccw 
+map [fullscreen] r rotate
+map [fullscreen] R rotate rotate-ccw 
+# sets mapping for reloading
+map [normal] <C-r> reload
+map [fullscreen] <C-r> reload
+# sets mapping for adjusting document to window
+unmap a
+unmap s
+map [normal] w adjust_window width
+map [normal] b adjust_window best-fit
+map [fullscreen] w adjust_window width
+map [fullscreen] b adjust_window best-fit
+# sets mapping to snapping to top and bottom of the page
+# currently does not work!!!
+unmap T
+unmap B
+map [normal] T goto page-top
+map [normal] B goto page-bottom
+map [fullscreen] T goto page-top
+map [fullscreen] B goto page-bottom
